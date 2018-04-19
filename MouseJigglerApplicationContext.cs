@@ -153,6 +153,10 @@ namespace MouseJiggler
         private void TsmiEnable_Click(object sender, EventArgs e)
         {
             _JiggleTimer.Enabled = tsmiEnable.Checked;
+            if (tsmiEnable.Checked)
+                _NotifyIcon.Text = "Mouse Jiggler (Enabled)";
+            else
+                _NotifyIcon.Text = "Mouse Jiggler (Disabled)";
         }
 
         private void TsmiAbout_Click(object sender, EventArgs e)
