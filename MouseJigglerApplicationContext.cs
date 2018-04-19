@@ -37,9 +37,15 @@ namespace MouseJiggler
                 MessageBox.Show(ex.Message, "Error writing registry value!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (Program.GhostJiggle)
+            {
                 this.tsmiGhost.Checked = true;
+                TsmiGhost_Click(this, null);
+            }
             if (Program.JiggleEnabled)
+            {
                 this.tsmiEnable.Checked = true;
+                TsmiEnable_Click(this, null);
+            }
         }
         /// <summary>
         /// This method sets up the Tray Icon and event handlers

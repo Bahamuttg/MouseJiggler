@@ -28,8 +28,13 @@ namespace MouseJiggler
 
                     if (args[i].ToLower() == "-jiggle" || args[i].ToLower() == "-j")
                         JiggleEnabled = true;
-                    if (args[i].ToLower() == "-ghost" || args[i].ToLower() == "-g")
+                    else if (args[i].ToLower() == "-ghost" || args[i].ToLower() == "-g")
                         GhostJiggle = true;
+                    else
+                    {
+                        Console.WriteLine("Invalid Command Line Switch!");
+                        return;
+                    }
                 }
 
                 Application.EnableVisualStyles();
