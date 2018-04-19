@@ -5,6 +5,6 @@
     </StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>-j -g</StartArguments>
+    <StartArguments>- j</StartArguments>
   </PropertyGroup>
 </Project>
